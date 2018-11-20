@@ -1,18 +1,24 @@
 *{margin: 0;
 padding: 0;
 box-sizing: border-box;
+text-align: justify;
 }
 
+main {
+    width: 900px;
+    margin: 0 auto; 
+}
 header {
-    text-align: center;
-    margin-top: 75px;
+    height: 90px;
+    width: 900px;
+    margin: 0 auto;
 }
 
 
 ul li {
     text-transform: uppercase;
-    display: inline;
-    margin: 85px;
+    display: inline-block;
+    padding-top: 75px;
 }
 
 .link {
@@ -20,18 +26,16 @@ ul li {
     color: inherit;
     font-size: 14;
     opacity: 0.7;
-    }
+    margin-left: 120px;
+}
 
 div {
     display: inline-block;
     width: 420px;
-    margin-top: 100px;
-    margin-left: 150px;
-    text-align: justify;
+    margin-top: 115px;
 }
 
 .id {
-    text-align: left;
     font-size: 14px;
     margin-top: 25px;
     text-transform: uppercase;
@@ -39,10 +43,9 @@ div {
     opacity: 0.4;
 }
 
-.row {
-    margin-top: 135px; 
-    margin-right: 100px;
-    vertical-align: top;
+.row  {
+    margin-top: 100px; 
+    vertical-align: top; 
 }
 
 h2 {
@@ -69,5 +72,6 @@ button {
     margin-top: 50px;
     font-size: 20px;
     opacity: 0.6;
+    text-align: center;
 }
 
