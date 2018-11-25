@@ -1,70 +1,98 @@
 *{margin: 0;
 padding: 0;
 box-sizing: border-box;
-text-align: justify;
 font-family: "Playfair Display";
 font-style: normal;
 font-weight: lighter;
+color: #626262;
 }
 
 main {
     width: 900px;
     margin: 0 auto; 
+    text-align: justify;
 }
 header {
-    height: 90px;
-    width: 900px;
-    margin: 0 auto;
+    padding-top: 72px;
+    margin-bottom: 95px;
+    text-align: center;
 }
 
+li {
+    display: inline-block;
+    width: 180px;
+}
 
 ul li {
     text-transform: uppercase;
     display: inline-block;
-    padding-top: 75px;
+    text-align: center;
 }
-
+ 
 .link {
     text-decoration: none;
-    color: inherit;
-    font-size: 14;
-    opacity: 0.7;
-    margin-left: 120px;
+    font-size: 14px;
+    font-family: "PlayfairDisplay";
+    color: rgb( 98, 98, 98 );
+    text-transform: uppercase;
+    line-height: 1.714;
+    text-align: center;
+    letter-spacing: -0.015em;
+}
+
+.link:hover {
+    color: #03a9f4;
 }
 
 div {
     display: inline-block;
     width: 420px;
-    margin-top: 135px;
+   }
+
+.text {
+    padding-bottom: 25px;
 }
 
-.id {
+p {
     font-size: 14px;
-    margin-top: 25px;
+    font-family: "Ubuntu";
+    color: rgb( 180, 173, 158 );
+    letter-spacing: -0.015em;
+    color: rgb(37, 37, 37);
+}
+
+.text-item {
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb( 180, 173, 158 );
     text-transform: uppercase;
-    font-family: Ububtu, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    opacity: 0.4;
+    color: rgb(180, 173, 158);
+
 }
 
 .row  {
-    margin-top: 100px; 
     vertical-align: top; 
+    padding-bottom: 100px;
 }
 
 h2 {
     margin-top: 20px;
-    font-size: 30px;
-    opacity: 0.6;
+    font-size: 33px;
+    color: rgb(98, 98, 98);
+    letter-spacing: 0.01em;
+    line-height: 35px;  
+    padding-bottom: 30px;
 }
 
 .par {
-    margin-top: 30px;
+    font-family: "PlayfairDisplay";
+    padding-bottom: 30px;
     font-size: 14px;
     opacity: 0.7;
     line-height: 24px;
 }
 
-button {
+.button {
     display: block;
     margin: auto;
     padding: auto;
@@ -73,13 +101,9 @@ button {
     width: 165px;
     height: 62px;
     margin-bottom: 70px;
-    margin-top: 50px;
     font-size: 20px;
     opacity: 0.6;
     text-align: center;
-}
-
-li a:hover {
-    color: blue;
+    margin-top: -100px;
 }
 
