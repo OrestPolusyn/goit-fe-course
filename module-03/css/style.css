@@ -46,7 +46,10 @@ a:hover, a:focus {
 
 .block {
     margin-bottom: 128px;
+}
 
+.block:nth-child(3n){
+    margin-bottom: 48px;
 }
 
 .row:nth-last-child(2n+1) {
@@ -80,10 +83,8 @@ p {
 
 .button {
     text-align: center;
-    margin-bottom: 70px;
-    margin-top: -80px;
     color: #626262;
-
+    padding-bottom: 70px;
 }
   
 button {
