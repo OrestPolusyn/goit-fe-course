@@ -1,109 +1,93 @@
 *{margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: "Playfair Display";
-font-style: normal;
-font-weight: lighter;
-color: #626262;
 }
 
-main {
+.conteiner {
     width: 900px;
-    margin: 0 auto; 
-    text-align: justify;
-}
-header {
-    padding-top: 72px;
-    margin-bottom: 95px;
-    text-align: center;
-}
-
-li {
-    display: inline-block;
-    width: 180px;
+    margin: 0 auto;
+    font-size: 0px;
 }
 
 ul li {
-    text-transform: uppercase;
     display: inline-block;
-    text-align: center;
 }
- 
-.link {
-    text-decoration: none;
+
+a {
     font-size: 14px;
-    font-family: "PlayfairDisplay";
     color: rgb( 98, 98, 98 );
     text-transform: uppercase;
     line-height: 1.714;
     text-align: center;
+    text-decoration: none;
     letter-spacing: -0.015em;
 }
 
-.link:hover {
-    color: #03a9f4;
+ul li:not(:last-child) {
+    margin-right: 104px;
 }
 
-div {
+a:hover, a:focus {
+    color: rgb(37, 180, 245);
+}
+
+.site-navigation {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 72px 0 96px 0;
+}
+
+.row {
     display: inline-block;
     width: 420px;
-   }
+    vertical-align: top;
+    margin-right: 60px;
+    margin-bottom: 128px;
+}
 
-.text {
-    padding-bottom: 25px;
+.row:nth-last-child(2n+1) {
+    margin-right: 0px;
+}
+
+span {
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    line-height: 70px;
+    font-size: 14px;
+    letter-spacing: -0.06em;
+    color:rgb( 98, 98, 98 );
+}
+
+h2 {
+    line-height: 26px;
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    margin-bottom: 30px;
+    color: #626262;
+
 }
 
 p {
     font-size: 14px;
-    font-family: "Ubuntu";
-    color: rgb( 180, 173, 158 );
-    letter-spacing: -0.015em;
-    color: rgb(37, 37, 37);
-}
-
-.text-item {
-    font-size: 14px;
-    font-family: "Ubuntu";
-    color: rgb( 180, 173, 158 );
-    text-transform: uppercase;
-    color: rgb(180, 173, 158);
-
-}
-
-.row  {
-    vertical-align: top; 
-    padding-bottom: 100px;
-}
-
-h2 {
-    margin-top: 20px;
-    font-size: 33px;
-    color: rgb(98, 98, 98);
-    letter-spacing: 0.01em;
-    line-height: 35px;  
-    padding-bottom: 30px;
-}
-
-.par {
-    font-family: "PlayfairDisplay";
-    padding-bottom: 30px;
-    font-size: 14px;
-    opacity: 0.7;
-    line-height: 24px;
+    color: #626262;
+    line-height: 26px;
+    letter-spacing: 0.015em;
 }
 
 .button {
-    display: block;
-    margin: auto;
-    padding: auto;
-    background: white;
-    border: 1px solid black;
-    width: 165px;
-    height: 62px;
-    margin-bottom: 70px;
-    font-size: 20px;
-    opacity: 0.6;
     text-align: center;
-    margin-top: -100px;
-}
+    margin-bottom: 70px;
+    margin-top: -80px;
+    color: #626262;
 
+}
+  
+button {
+    width: 162px;
+    border: 1px solid #626262;
+    background: inherit;
+    font-size: 20px;
+    color: #626262;
+    padding: 17px 0;
+    text-align: center;
+}
