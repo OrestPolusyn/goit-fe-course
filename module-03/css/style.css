@@ -42,7 +42,11 @@ a:hover, a:focus {
     width: 420px;
     vertical-align: top;
     margin-right: 60px;
+}
+
+.block {
     margin-bottom: 128px;
+
 }
 
 .row:nth-last-child(2n+1) {
