@@ -6,84 +6,108 @@ box-sizing: border-box;
 .conteiner {
     width: 900px;
     margin: 0 auto;
-    font-size: 0px;
+    font-family: "Playfair Display";
+    color: rgb( 98, 98, 98 );
+    font-weight: normal;
+
 }
 
-ul li {
+ul {
+    widows: 900px;
+    margin: 0 auto;
+    padding: 0;
+}
+li {
     display: inline-block;
+    width: 154px;
+    text-align: center;
+    /* margin-right: 14px; */
+    font-size: 0;
+}
+li:last-child {
+    margin-right: 0;
 }
 
 a {
     font-size: 14px;
-    color: rgb( 98, 98, 98 );
     text-transform: uppercase;
-    line-height: 1.714;
     text-align: center;
     text-decoration: none;
-    letter-spacing: -0.015em;
+    letter-spacing: 0.02em;
 }
 
 ul li:not(:last-child) {
-    margin-right: 104px;
+    margin-right: 10px;
 }
 
 a:hover, a:focus {
+    color: rgb(37, 180, 245);
+}
+ul:hover {
     color: rgb(37, 180, 245);
 }
 
 .site-navigation {
     text-transform: uppercase;
     text-align: center;
-    padding: 72px 0 96px 0;
+    padding: 72px 10px 98px;
 }
 
 .row {
     display: inline-block;
     width: 420px;
     vertical-align: top;
-    margin-right: 60px;
+    margin-right: 56px;
+}
+.row:last-child {
+    margin-right: 0;
 }
 
+
+img {
+    widows: 420px;
+    height: 280px;
+    margin-bottom: 26px;
+}
 .block {
     margin-bottom: 128px;
+    vertical-align: top;
 }
 
-.block:nth-child(3n){
-    margin-bottom: 48px;
+.block:last-of-type {
+    margin-bottom: 52px;
 }
 
-.row:nth-last-child(2n+1) {
-    margin-right: 0px;
-}
-
-span {
-    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+h3 {
+    font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
-    line-height: 70px;
     font-size: 14px;
-    letter-spacing: -0.06em;
+    letter-spacing: -0.07em;
     color:rgb( 98, 98, 98 );
+    margin-bottom: 18px;
+    font-weight: normal;
 }
 
 h2 {
-    line-height: 26px;
     font-size: 30px;
-    letter-spacing: 0.02em;
-    margin-bottom: 30px;
-    color: #626262;
-
+    margin-bottom: 26px;
+    color: rgb( 98, 98, 98 );
+    font-weight: normal;
+    text-align: justify;
+    letter-spacing: 0.01em;
 }
 
 p {
+    line-height: 24px;
     font-size: 14px;
-    color: #626262;
-    line-height: 26px;
-    letter-spacing: 0.015em;
+    color: rgb( 98, 98, 98 );
+    letter-spacing: -0.02em;
+    text-align: justify;
 }
 
 .button {
     text-align: center;
-    color: #626262;
+    color: rgb( 98, 98, 98 );
     padding-bottom: 70px;
 }
   
@@ -92,7 +116,7 @@ button {
     border: 1px solid #626262;
     background: inherit;
     font-size: 20px;
-    color: #626262;
+    color: rgb( 98, 98, 98 );
     padding: 17px 0;
     text-align: center;
 }
