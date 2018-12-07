@@ -1,27 +1,22 @@
-*{margin: 0;
-padding: 0;
-box-sizing: border-box;
+body {
+    margin: 0;
+    padding: 0;
 }
-
 .conteiner {
     width: 900px;
     margin: 0 auto;
     font-family: "Playfair Display";
-    color: rgb( 98, 98, 98 );
     font-weight: normal;
-
 }
 
 ul {
-    widows: 900px;
-    margin: 0 auto;
-    padding: 0;
+    text-align: center;
 }
-li {
+
+ul li {
     display: inline-block;
     width: 154px;
     text-align: center;
-    /* margin-right: 14px; */
     font-size: 0;
 }
 li:last-child {
@@ -33,7 +28,8 @@ a {
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
-    letter-spacing: 0.02em;
+    letter-spacing: -0.02em;
+    color: black;
 }
 
 ul li:not(:last-child) {
@@ -43,39 +39,32 @@ ul li:not(:last-child) {
 a:hover, a:focus {
     color: rgb(37, 180, 245);
 }
-ul:hover {
-    color: rgb(37, 180, 245);
-}
+
 
 .site-navigation {
+    width: 900px;
+    margin: 0 auto;
     text-transform: uppercase;
-    text-align: center;
-    padding: 72px 10px 98px;
+    padding: 72px 0 100px;
 }
 
 .row {
     display: inline-block;
     width: 420px;
-    vertical-align: top;
     margin-right: 56px;
 }
 .row:last-child {
     margin-right: 0;
 }
 
-
 img {
+    display: block;
     widows: 420px;
     height: 280px;
-    margin-bottom: 26px;
+    margin-bottom: 30px;
 }
 .block {
-    margin-bottom: 128px;
-    vertical-align: top;
-}
-
-.block:last-of-type {
-    margin-bottom: 50px;
+    margin-bottom: 120px;
 }
 
 h3 {
@@ -83,14 +72,14 @@ h3 {
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: -0.07em;
-    color:rgb( 98, 98, 98 );
-    margin-bottom: 18px;
+    color:rgb( 180, 173, 158);
+    margin: 0 0 18px 0;
     font-weight: normal;
 }
 
 h2 {
     font-size: 30px;
-    margin-bottom: 26px;
+    margin: 0 0 24px 0;
     color: rgb( 98, 98, 98 );
     font-weight: normal;
     text-align: justify;
@@ -104,19 +93,23 @@ p {
     letter-spacing: -0.02em;
     text-align: justify;
 }
-
-.button {
-    text-align: center;
-    color: rgb( 98, 98, 98 );
-    padding-bottom: 70px;
-}
   
-button {
-    width: 162px;
+button {  
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    display: block;
+    margin: 0 auto;
+    width: 164px;
     border: 1px solid #626262;
     background: inherit;
-    font-size: 20px;
+    line-height: 22px;
+    font-size: 22px;
+    letter-spacing: -0.04em;
     color: rgb( 98, 98, 98 );
     padding: 17px 0;
-    text-align: center;
+
+}
+
+footer {
+    margin-top: 70px;
 }
