@@ -102,5 +102,8 @@ button {
     letter-spacing: -0.04em;
     color: rgb( 98, 98, 98 );
     padding: 17px 0;
-    margin-bottom: 70px;
+}
+
+.button {
+    padding-bottom: 70px;
 }
