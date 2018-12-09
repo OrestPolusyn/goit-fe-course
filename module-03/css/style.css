@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    padding: 0;
 }
 .conteiner {
     width: 900px;
@@ -13,11 +12,11 @@ ul {
     text-align: center;
 }
 
-ul li {
+li {
     display: inline-block;
     width: 154px;
-    text-align: center;
     font-size: 0;
+    padding: 0 5px;
 }
 li:last-child {
     margin-right: 0;
@@ -32,10 +31,6 @@ a {
     color: black;
 }
 
-ul li:not(:last-child) {
-    margin-right: 10px;
-}
-
 a:hover, a:focus {
     color: rgb(37, 180, 245);
 }
@@ -45,7 +40,7 @@ a:hover, a:focus {
     width: 900px;
     margin: 0 auto;
     text-transform: uppercase;
-    padding: 72px 0 100px;
+    padding: 74px 0 100px;
 }
 
 .row {
@@ -59,12 +54,12 @@ a:hover, a:focus {
 
 img {
     display: block;
-    widows: 420px;
+    width: 420px;
     height: 280px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 .block {
-    margin-bottom: 120px;
+    margin-bottom: 128px;
     font-size: 0;
 }
 
@@ -72,7 +67,7 @@ h3 {
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     font-size: 14px;
-    letter-spacing: -0.07em;
+    letter-spacing: -0.06em;
     color:rgb( 180, 173, 158);
     margin: 0 0 18px 0;
     font-weight: normal;
@@ -80,14 +75,13 @@ h3 {
 
 h2 {
     font-size: 30px;
-    margin: 0 0 24px 0;
+    margin: 0 0 28px 0;
     color: rgb( 98, 98, 98 );
     font-weight: normal;
-    text-align: justify;
-    letter-spacing: 0.01em;
 }
 
 p {
+    margin: 0;
     line-height: 24px;
     font-size: 14px;
     color: rgb( 98, 98, 98 );
@@ -108,9 +102,5 @@ button {
     letter-spacing: -0.04em;
     color: rgb( 98, 98, 98 );
     padding: 17px 0;
-
-}
-
-footer {
-    margin-top: 70px;
+    margin-bottom: 70px;
 }
