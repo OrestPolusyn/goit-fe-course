@@ -1,243 +1,243 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 *, *::after,*::before {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .clearfix::after {
-    display: table;
-    content: "";
-    clear: both;
+  display: table;
+  content: "";
+  clear: both;
 }
 
 header {
-    padding: 34px 0 ;
-    margin-bottom: 56px;
+  padding: 34px 0 ;
+  margin-bottom: 56px;
 }
 
 .page-nav {
-    padding: 34px 0 122px;
+  padding: 34px 0 122px;
 }
 
 .conteiner {
-    width:1110px;
-    margin: 0 auto;
+  width:1110px;
+  margin: 0 auto;
 }
   
 .logo {
-    float: left;
-    text-transform: uppercase;
-    font-size: 30px;
-    line-height: 32px;
-    font-family: "Roboto Light", arial;
-    letter-spacing: -0.05em;
-    color:#8e8c8c;
-    font-weight: 200;   
+  float: left;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 32px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: -0.02em;
+  color:#605e5e;
+  font-weight: 300;   
 }
 
 .logo::first-letter {
-    color: #1abc9c;
-    font-family: "Roboto";
-    font-weight: 900;
+  color: #1abc9c;
+  font-family: "Roboto";
+  font-weight: 900;
 }
 
 .nav-item {
-    float: right;
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-family: "OpenSans", arial;
-    font-weight: bold;
+  float: right;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "OpenSans", arial;
+  font-weight: bold;
+  text-align: center;
 }
 
 .nav-item li{
-    margin-right: 20px;
-    padding-top: 8px;
-    float: right;
-    display: block;
-    letter-spacing: -0.02em;
-
+  width: 100px;
+  float: right;
+  display: block;
+  letter-spacing: -0.02em;
 }
 
 .nav-item li:first-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 a {
-    padding: 6px;
-    width: 100px;
-    color: #323232;
-    text-decoration: none;
-
+  padding: 6px;
+  color: #0f0101;
+  text-decoration: none;
 }
 
 .nav-item :hover, 
 .nav-item :focus {
-    color: aqua;
+  color: aqua;
 }
 
 .cart {
-    float: left;
-    margin-bottom: 96px;
+  float: left;
+  margin-bottom: 96px;
 }
 
 h2 {
-    margin: 0;
-    font-family: "Roboto Black", arial;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 48px;
-    margin-bottom: 112px;
-    letter-spacing: -0.07em;
-    color: #515151;
+  margin: 0;
+  font-family: "Roboto Black", arial;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 112px;
+  letter-spacing: -0.07em;
+  color: #515151;
 }
 
 h2::after {
-    width: 164px;
-    height: 7px;
-    border: 1px solid #4ec6ab;
-    background:#4ec6ab;
-    position: relative;
-    top: 20px;
-    left: 474px;
+  width: 164px;
+  height: 7px;
+  border: 1px solid #4ec6ab;
+  background:#4ec6ab;
+  position: relative;
+  top: 20px;
+  left: 474px;
 }
 
 .block {
-    background: #e8effc;
-    width: 255px;
-    height: 320px;
-    display: block;
-    float: left;
-    margin: 0 30px 32px 0;
-    font-size: 0;
+  background: #e8effc;
+  width: 255px;
+  height: 320px;
+  display: block;
+  float: left;
+  margin: 0 30px 32px 0;
+  font-size: 0;
 }
 
 .block:nth-child(4n+1) {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .block:nth-last-child(-n+4) {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 img {
-    width: 255px;
-    height: 280px;
+  width: 255px;
+  height: 280px;
 }
 
 .name-price {
-    float: left;
-    width: 200px;
-    height: 40px;
-    border: 0;
-    background: #323232;
-    color: white;
-    text-transform: uppercase;
-    text-align: start;
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    line-height: 32px;
-    letter-spacing: -0.02em;
-    padding: 6px 14px;
+  float: left;
+  width: 200px;
+  height: 40px;
+  border: 0;
+  background: #323232;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Roboto", arial;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  padding: 6px 14px;
 }
   
 .price {
-    float: right;
-    width: 55px;
-    height: 40px;
-    border: 0;
-    background: #8c8c8c;
-    font-size: 18px;
-    font-family: "Roboto black", sans-serif;
-    color: rgb( 255, 255, 255 );
-    text-transform: uppercase;
-    font-weight: bold;
-    padding-top: 6px;
+  float: right;
+  width: 55px;
+  height: 40px;
+  border: 0;
+  background: #8c8c8c;
+  font-size: 18px;
+  font-family: "Roboto",arial;
+  color: rgb( 255, 255, 255 );
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 6px;
+  text-align: center;
+  /* padding: 10px 0; */
+  line-height: 32px;
 }
 
 .block:hover .name-price{
-    background:#1abc9c;
+  background:#1abc9c;
 }
 
 .block:hover .price {
-    background: #7fd9c7;
+  background: #7fd9c7;
 }
-  
+
 .news {
-    width: inherit;
-    float: left;
-    margin-bottom: 70px;
+  width: inherit;
+  float: left;
+  margin-bottom: 70px;
 }
 
 .news-name {
-    margin-bottom: 100px;
-    /* letter-spacing:  */
+  margin-bottom: 100px;
+  /* letter-spacing:  */
 }
 .news-img {
-    width: 350px;
-    height: 262px;
-    margin-bottom: 10px;
+  width: 350px;
+  height: 262px;
+  margin-bottom: 10px;
 }
 
 .news-block {
-    font-size: 0;
-    width: 350px;
-    float: left;
-    margin-right: 30px;
+  font-size: 0;
+  width: 350px;
+  float: left;
+  margin-right: 30px;
 }
 
 .news-block:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 h3 {
-    margin: 0;
-    font-family: "OpenSans", arial;
-    font-weight: 600;
-    font-size: 18px;
-    margin-bottom: 30px;
-    line-height: 26px;
-    letter-spacing: -0.02em;
-    color: #555252;
+  margin: 0;
+  font-family: "OpenSans", arial;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  color: #555252;
 }
 
 h3::after {
-    width: 136px;
-    height: 3px;
-    border: 1px solid #4ec6ab;
-    background:#4ec6ab;
-    position: relative;
-    top: 8px;
+  width: 136px;
+  height: 3px;
+  border: 1px solid #4ec6ab;
+  background:#4ec6ab;
+  position: relative;
+  top: 8px;
 }
 
 p {
-    margin: 0 0 12px;
-    font-family: "OpenSans", arial;
-    font-size: 14px;
-    line-height: 26px;
-    color:#777575;
+  margin: 0 0 12px;
+  font-family: "OpenSans", arial;
+  font-size: 14px;
+  line-height: 26px;
+  color: #555252;
 }
 
 .button {
-   width: 160px;
-   height: 50px;
-   border-radius: 3px;
-   background: #4ec6ab;
-   border: 0;
-   color: white;
-   font-size: 16px;
-   font-family: "OpenSans", arial;
-   font-weight: 300;
-   line-height: 26px;
-   text-align: center;
-    letter-spacing: -0.02em;
+  width: 160px;
+  height: 50px;
+  border-radius: 3px;
+  background: #4ec6ab;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  font-family: "OpenSans", arial;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: -0.02em;
 }
