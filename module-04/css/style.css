@@ -51,7 +51,7 @@ header {
   float: right;
   margin: 0;
   padding-left: 0;
-  padding-top: 8px;
+  padding: 8px 0;
   font-size: 14px;
   text-transform: uppercase;
   font-family: "OpenSans", arial;
@@ -66,12 +66,12 @@ header {
   letter-spacing: -0.02em;
 }
 
-.nav-item li:first-child {
+li:first-child {
   margin-right: 0;
 }
 
 a {
-  padding: 6px;
+  padding: 0 6px;
   color: #0f0101;
   text-decoration: none;
 }
@@ -114,16 +114,20 @@ h2::after {
   height: 320px;
   display: block;
   float: left;
-  margin: 0 30px 32px 0;
   font-size: 0;
+  margin-right: 30px;
 }
 
-.block:nth-child(4n+1) {
-  margin-right: 0;
+.block:last-child {
+  margin-right:0;
 }
 
-.block:nth-last-child(-n+4) {
-  margin-bottom: 0;
+.first {
+  margin-bottom: 32px;
+}
+
+.second {
+margin-bottom: 0;
 }
 
 img {
@@ -145,7 +149,7 @@ img {
   font-weight: 600;
   line-height: 32px;
   letter-spacing: -0.02em;
-  padding: 0 14px;
+  padding: 5px 14px;
 }
   
 .price {
@@ -228,13 +232,16 @@ p {
   color: #555252;
 }
 
-.button {
+button{ 
   width: 160px;
   height: 50px;
   border-radius: 3px;
   background: #4ec6ab;
   border: 0;
   color: white;
+}
+
+.button {
   font-size: 16px;
   font-family: "OpenSans", arial;
   font-weight: 300;
