@@ -111,7 +111,6 @@ h2::after {
 .block {
   background: #e8effc;
   width: 255px;
-  height: 320px;
   display: block;
   float: left;
   font-size: 0;
@@ -139,7 +138,6 @@ img {
   float: left;
   width: 200px;
   text-align: left;
-  height: 40px;
   border: 0;
   background: #323232;
   color: white;
@@ -149,13 +147,12 @@ img {
   font-weight: 600;
   line-height: 32px;
   letter-spacing: -0.02em;
-  padding: 5px 14px;
+  padding: 4px 14px;
 }
   
 .price {
   float: right;
   width: 55px;
-  height: 40px;
   border: 0;
   background: #8c8c8c;
   font-size: 18px;
@@ -165,7 +162,7 @@ img {
   font-weight: bold;
   padding-top: 6px;
   text-align: center;
-  padding: 5px 0;
+  padding: 4px 0;
   line-height: 32px;
 }
 
@@ -180,7 +177,7 @@ img {
 .news {
   width: inherit;
   float: left;
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 
 .news-name {
@@ -234,11 +231,11 @@ p {
 
 button{ 
   width: 160px;
-  height: 50px;
   border-radius: 3px;
   background: #4ec6ab;
   border: 0;
   color: white;
+  padding: 18px 0;
 }
 
 .button {
