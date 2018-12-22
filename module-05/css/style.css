@@ -167,7 +167,6 @@ a {
     font-weight: 400;
     font-size: 24px;
     letter-spacing: -0.02em;
-
 }
 
 main {
@@ -287,7 +286,6 @@ img {
     float: left;
     width: 200px;
     text-align: left;
-    height: 40px;
     border: 0;
     background: #323232;
     color: white;
@@ -297,14 +295,13 @@ img {
     font-weight: 600;
     line-height: 32px;
     letter-spacing: -0.02em;
-    padding: 5px 14px;
+    padding: 8px 14px;
     cursor: pointer;
 }
     
 .price {
     float: right;
     width: 55px;
-    height: 40px;
     border: 0;
     background: #8c8c8c;
     font-size: 18px;
@@ -314,7 +311,7 @@ img {
     font-weight: bold;
     padding-top: 6px;
     text-align: center;
-    padding: 5px 0;
+    padding: 8px 0;
     line-height: 32px;
     cursor: pointer;
 }
@@ -375,8 +372,8 @@ img {
 
 .footer {
     margin: 0;
-    padding: 0;
-    height: 86px;
+    padding: 44px 0;
+    /* height: 86px; */
     background: #323232;
     text-align: center;
     color: #fefefe;
