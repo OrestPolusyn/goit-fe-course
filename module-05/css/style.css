@@ -78,7 +78,7 @@ a {
   
 .nav-item :hover, 
 .nav-item :focus {
-    color: aqua;
+    color: #1abc9c;
 }
 
 .slider {
@@ -104,12 +104,16 @@ a {
 .slide-click{
     width: 104px;
     height: 104px;
-    background: rgba(78, 198, 171, 65%);
     border: none;
     cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-70%);
+    background: rgba(78, 198, 171, 65%);
+}
+
+.slide-click:hover {
+    background: none;
 }
 
 .ctrl-prew {
@@ -188,7 +192,6 @@ main {
     margin-bottom: 102px;
     letter-spacing: -0.02em;
     color: #515151;
-    
 }
 
 .cart-name::after {
@@ -240,6 +243,7 @@ img {
     left: 0;
     top: 0;   
     position: absolute;
+    border: 1px solid white;
 }
 
 .stel {
@@ -249,6 +253,7 @@ img {
     transform: translateX(-50%);
     top: 0;
     position: absolute;
+    border: 1px solid white;
 }
 
 .time {
@@ -257,7 +262,7 @@ img {
     right: 0;
     top: 0;
     position: absolute;
-
+    border: 1px solid white;
 }
 
 .add-cart {
@@ -265,6 +270,8 @@ img {
     height: 46px;
     bottom: 0;
     position: absolute;
+    border: 1px solid white;
+    background-color: #323232;
 }
 
 .call {
@@ -335,29 +342,20 @@ img {
 
 .block:hover .hart {
     background-image: url(../img/hart.png);
-    border: 1px solid white;
-    opacity: 1;
 }
 
 .block:hover .stel {
     background-image: url(../img/line.png);
-    border: 1px solid white;
-    opacity: 1;
 }
 
 .block:hover .time {
     padding-top: 10px;
     background-image: url(../img/time.png);
-    border: 1px solid white;
-    opacity: 1;
 }
 
 .block:hover .add-cart {
     background-image: url(../img/cart.png);
     background-repeat: no-repeat;
-    border: 1px solid white;
-    background-color: #323232;
-    opacity: 1;
 }
 
 .block:hover img {
@@ -365,15 +363,15 @@ img {
 }
 
 .stel:hover, .hart:hover, 
-.time:hover, .add-cart:hover {
-    background:#1abc9c;
+.time:hover, .add-cart:hover  {
+    background-color:#1abc9c;
+    border: none;
 }
 
 
 .footer {
     margin: 0;
     padding: 44px 0;
-    /* height: 86px; */
     background: #323232;
     text-align: center;
     color: #fefefe;
