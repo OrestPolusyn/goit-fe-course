@@ -58,12 +58,13 @@
         <div class="conteiner">
             <form class="confir" action="#">
                 <div>
-                    <input class="holder" type="text" placeholder="Your Name *" />
-                    <input class="holder" type="text" placeholder="Your Email *" />
+                    <input class="holder" type="text" placeholder="Your Name *" required />
+                    <input class="holder" type="email" placeholder="Your Email *" required />
                     <input class="holder" type="text" placeholder="Subject" />
                 </div>
-                <textarea  class="massage" name="massage" id="massage" cols="25" rows="8"
-                required="required" placeholder="your massage*"></textarea>
+                
+                <textarea  class="message" name="message" id="massage" cols="25" rows="8"
+                required placeholder="your message*"></textarea>
             </form>
         </div>
         <input class="button" type="submit" value="send massage" />

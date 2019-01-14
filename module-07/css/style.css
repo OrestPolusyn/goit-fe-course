@@ -255,6 +255,7 @@ textarea {
 }
 
 .holder, textarea {
+    display: block;
     padding: 16px;
     color: #222222;
     font-family: "Montserrat", serif;
@@ -264,6 +265,8 @@ textarea {
     border-radius: 2px;
     border: none;
     box-sizing: border-box;
+    resize: none;
+
 }
 
 .button {
@@ -281,3 +284,10 @@ textarea {
     letter-spacing: -0.025em;
 }
 
+:required:invalid:not(:placeholder-shown) {
+    background: #fdd; /* Красный цвет фона */
+}
+
+:required:valid:not(:placeholder-shown) {
+    background: #dfd; /* Зеленый цвет фона */
+}
