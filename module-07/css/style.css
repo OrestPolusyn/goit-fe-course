@@ -26,11 +26,49 @@ body {
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400, 900;
+    font-weight: 400;
     src: local('Montserrat Regular'), local('Montserrat-Regular'),
-    url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/montserrat-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+         url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-600 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+         url('../fonts/montserrat-v12-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v12-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-800 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+         url('../fonts/montserrat-v12-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v12-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-900 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Montserrat Black'), local('Montserrat-Black'),
+         url('../fonts/montserrat-v12-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v12-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+
 
 /* roboto-slab-regular - latin */
 @font-face {
@@ -42,17 +80,24 @@ body {
     url('../fonts/roboto-slab-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Wisdom';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Wisdom'), local('Wisdom'),
+    /* url('../fonts/Wisdom-Script.woff2') format('woff2'), Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/Wisdom-Script.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 nav {
     display: flex;
     justify-content: space-between;
-    align-content: center;
 }
   
 header {
     padding-top: 34px;
-    margin-bottom: 90px;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 92px;
 }
    
 .conteiner {
@@ -61,14 +106,12 @@ header {
 }
     
 .logo {
-    display: flex;
-    align-items: flex-end;
     font-size: 26px;
-    line-height: 41px;
-    font-family: 'Great Vibes', sans-serif;
-    font-weight: 700;
+    font-family: 'Wisdom', sans-serif;
+    font-weight: 400;
     color:#fed136;
     letter-spacing: 0.05em;
+    padding: 7px 0;
 }
     
 .nav-item {
@@ -76,11 +119,6 @@ header {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
-    text-transform: uppercase;
-    /* line-height: 41px; */
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
 }
   
 .nav-item li{
@@ -88,10 +126,14 @@ header {
     justify-content: center;
     align-items: center;
     width: 100px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 a {
-    padding: 10px 10px;
+    padding: 20px 10px 6px;
     color: #0f0101;
     text-decoration: none;
     position: relative;
@@ -105,16 +147,14 @@ a {
 }
 
 h2 {
-    margin: 0;
+    margin: 0 0 4px;
+    padding: 14px 0 6px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    /* font-weight: 600; */
-    font-style: bold;
+    font-weight: 700;
     display: flex;
     justify-content: center;
-    position: relative;
     font-size: 40px;
-    line-height: 75px;
     letter-spacing: -0.025em;
 }
 
@@ -134,7 +174,7 @@ h3 {
 }
 
 .cart {
-    padding-bottom: 114px;
+    padding-bottom: 118px;
     display: flex;
     justify-content: space-between;
     align-content: space-between;
@@ -186,17 +226,12 @@ p {
     line-height: 22px;
 }
 
-.map {
-    width: 160px;
-    height: 160px;
-}
-
 .foot {
     background-image: url(../img/map.png);
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 88px 0 50px;
+    padding: 86px 0 50px;
 }
 
 .send-info {
@@ -207,7 +242,7 @@ p {
 } 
 
 .contact {
-    margin: 0;
+    margin: 0 0 8px;
     text-transform: uppercase;
     color: white;
 }
@@ -220,6 +255,7 @@ p {
     display: flex;
     justify-content: center;
     color: #777777;
+    letter-spacing: 0.015em;
 }
 
 input {
@@ -233,10 +269,8 @@ input:last-child {
 .holder {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
-    width: 454px;
+    width: 456px;
     text-transform: uppercase;
-    /* margin-bottom: 26px; */
 }
 
 .confir, textarea {
@@ -250,38 +284,38 @@ input:last-child {
 }
 
 textarea {
-    width: 454px;
+    width: 456px;
     flex-direction: column;
 }
 
 .holder, textarea {
     display: block;
-    padding: 16px;
+    padding: 16px 20px;
     color: #222222;
     font-family: "Montserrat", serif;
     font-weight: 700;
     font-size: 14px;
-    text-transform: uppercase;
     border-radius: 2px;
     border: none;
     box-sizing: border-box;
     resize: none;
-
+    letter-spacing: -0.025em;
+    text-transform: uppercase;
 }
 
 .button {
     display: block;
     margin: 0 auto;
-    padding: 22px 48px;
+    padding: 22px 46px;
     color: #ffffff;
     font-family: "Montserrat", serif;
     font-weight: 700;
     font-size: 18px;
-    text-transform: uppercase;
     border-radius: 2px;
     border: none;
     background: #fed136;
     letter-spacing: -0.025em;
+    text-transform: uppercase;
 }
 
 :required:invalid:not(:placeholder-shown) {
