@@ -16,15 +16,15 @@ body {
     clear: both;
 }
   
-nav {
-    padding: 34px 0 36px;
-}
-  
 .conteiner {
     width:1110px;
     margin: 0 auto;
 }
     
+nav {
+    padding: 34px 0 36px;
+}
+
 .logo {
     float: left;
     text-transform: uppercase;
@@ -93,14 +93,16 @@ a {
 }
 
 .slide-click{
-    width: 104px;
-    height: 104px;
+    padding: 24px 36px;
     border: none;
     cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-70%);
     background: rgb(78, 198, 171, 65%);
+    font-size: 50px;
+    color: white;
+    
 }
 
 .slide-click:hover {
@@ -111,7 +113,7 @@ a {
     left: 0;
 }
 
-.ctrl-prew::before {
+/* .ctrl-prew::before {
     content: "";
     width: 24px;
     height: 24px;
@@ -121,13 +123,13 @@ a {
     position: absolute;
     left: 46px;
     top: 36px;
-}
+} */
 
 .ctrl-next {
     right: 0;
 }
 
-.ctrl-next::before {
+/* .ctrl-next::before {
     content: "";
     width: 24px;
     height: 24px;
@@ -137,7 +139,7 @@ a {
     position: absolute;
     right: 46px;
     top: 36px;
-}
+} */
 
 .title {
     width: 740px;
@@ -202,12 +204,11 @@ img {
 }
 
 .overlay {
-    width: 236px;
-    height: 260px;
+    width: 255px;
+    height: 280px;
     position: absolute;
-    top: 10px;
-    left: 10px;
-    border: white;
+    top: 0;
+    left: 0;
 }
 
 .block {
@@ -281,11 +282,13 @@ button {
     color: #f5efef;
     font-size: 14px;
     border: 1px solid white;
-    padding: 0;
+    padding-left: 50px;
     cursor: pointer;
+
 }
 
 .add-cart::before {
+    float: none;
     content: '';
     width: 50px;
     height: 50px;
@@ -295,10 +298,6 @@ button {
     background-repeat: no-repeat;
     background-image: url(../img/cart.png);
 }   
-
-.call {
-    padding-left: 30px;
-}
 
 .block:last-child{
     margin-right: 0;
@@ -347,7 +346,7 @@ button {
 .block:hover .overlay {
     background: rgba(0, 0, 0);
     opacity: 0.5;
-    border: 1px solid white;
+    border: 10px solid white;
 
 }
 
@@ -361,9 +360,10 @@ button {
 
 .steel:hover, .heart:hover, 
 .time:hover, .add-cart:hover  {
-    background-color:#1abc9c;
-    border: none;
+    background-color: #1abc9c;
+    border: 1px solid #1abc9c;
 }
+
 
 .end {
     margin: 0;
