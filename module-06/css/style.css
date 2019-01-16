@@ -12,7 +12,7 @@ body {
 
 header {
     padding-top: 34px;
-    margin-bottom: 116px;
+    margin-bottom: 114px;
     display: flex;
     justify-content: center;
 }
@@ -29,8 +29,6 @@ nav {
 }
     
 .logo {
-    display: flex;
-    align-items: flex-end;
     font-size: 30px;
     line-height: 32px;
     font-family: 'Montserrat', sans-serif;
@@ -43,23 +41,21 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
     font-size: 14px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
   
 .nav-item li{
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100px;
 }
 
 li a {
-    padding: 12px 10px 2px;
-    color: #0f0101;
+    padding: 8px 10px ;
+    color: #95e1d3;
     text-decoration: none;
     position: relative;
     transition: color 200ms linear;
@@ -71,10 +67,10 @@ li a {
     opacity: 1;
 }
 
-li a:hover:before  {
+li a:hover:before {
     content: "";
     display: block;
-    width: 50px;
+    width: calc(100% - 20px);
     height: 2px;
     border: 1px solid #f38181;
     position: absolute;
@@ -92,26 +88,24 @@ li a:hover:before  {
     font-weight: 400;
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
+    font-size: 24px;
     color:#333333;
 }
 
-.cart-named {
-    margin: 0 0 110px;
+h2 {
+    margin: 0 0 100px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 32px;
     display: flex;
     justify-content: center;
-    align-items: center;
     position: relative;
     letter-spacing: -0.04em;
     color: #333333;
 }
 
-.cart-named::before {
+h2::before {
     content: "";
     display: block;
     width: 60px;
@@ -122,35 +116,32 @@ li a:hover:before  {
     top: 74px;
 }
 
-.first, .second {
+.first {
     display: flex;
     justify-content: space-between;
     align-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    /* margin-bottom: -10px; */
 }
 
-.first {
-    margin-bottom: 94px;
-
-}
-.second {
-    padding-bottom: 98px;
-}
 
 .block {
+    margin-bottom: 94px;
     width: 380px;
-    padding: 0 50px 0 70px;
+    padding: 0 0 0 80px;
     position: relative;
 }
 
 .block::before {
-    display: inline-block;
+    display: block;
     content: '';
     width: 50px;
     height: 50px;
     position: absolute;
-    left: 0;
+    left: 12px;
     top: 0;
-    transform: translateY(-6px);
+    transform: translateY(-4px);
     background-repeat: no-repeat;
 } 
 
@@ -179,10 +170,10 @@ li a:hover:before  {
 }
 
 h6 {
-    margin: 0 0 18px;
+    margin: 0 0 10px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 14px;
     color:#333333;
 }
@@ -192,8 +183,14 @@ p  {
     color: #b3b3b3;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
+    line-height: 24px;
+    padding-right: 10px;
+}
 
+
+.cart-named{
+    margin-bottom: 78px;
 }
 
 .par {
@@ -205,20 +202,18 @@ p  {
     font-size: 15px;
     color:#acacac;
     font-weight: 300;
-
+    line-height: 23px;
 }
 
 .team {
-    /* background: pink; */
     display: flex;
     justify-content: space-between;
-    position: relative;
     padding-bottom: 80px;    
 }
 
 .team-photo {
     height: 470px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     background-color: #95e1d3;
     position: relative;
 }
@@ -289,7 +284,7 @@ p  {
     color:#666666;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 12px;
+    margin-bottom: 2px;
 }
 
 .profetion {
@@ -304,14 +299,14 @@ p  {
 footer {
     display: flex;
     justify-content: space-between;
-    align-items: space-between;
-    padding: 30px 0 15px;
+    padding: 10px 0 15px;
     border-top: 1px solid #e5e5e5;
 }
 
 .autor {
-    display: flex;
-    align-items: center;
+    padding: 8px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
 }
 
 .coloroid {
@@ -320,16 +315,18 @@ footer {
 
 form {
     display: flex;
-    align-items: center;
+    height: 40px;
 }
 
 input {
     font-family: "Roboto", sans-serif;
-    color: #999999;
+    color: rgb( 204, 204, 204 );
     font-weight: 300;
     font-style: italic;
-    width: 200px;
-    padding: 10px;
+    font-size: 15px;
+    line-height: 24px;
+    width: 230px;
+    padding: 12px;
     border: 1px solid #e5e5e5;
 }
 
@@ -341,6 +338,6 @@ button {
     color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 10px 30px;
+    padding: 10px 32px;
     cursor: pointer;
 } 
