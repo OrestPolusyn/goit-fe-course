@@ -116,15 +116,14 @@ header {
     
 .nav-item {
     margin: 0;
-    padding: 0;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
 }
   
 .nav-item li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
     width: 100px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -133,10 +132,8 @@ header {
 }
 
 a {
-    padding: 20px 10px 6px;
     color: #0f0101;
     text-decoration: none;
-    position: relative;
     transition: color 200ms linear;
 } 
 
@@ -147,15 +144,14 @@ a {
 }
 
 h2 {
-    margin: 0 0 4px;
-    padding: 14px 0 6px;
+    margin: 0 0 10px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
     font-size: 40px;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.031em;
 }
 
 h3 {
@@ -164,9 +160,10 @@ h3 {
     font-weight: 400;
     font-size: 16px;
     font-style: italic;
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
     color: #777777;
+    letter-spacing: 0.025em;
 }
 
 .cart-named {
@@ -174,25 +171,28 @@ h3 {
 }
 
 .cart {
-    padding-bottom: 118px;
+    padding-bottom: 114px;
     display: flex;
     justify-content: space-between;
-    align-content: space-between;
 }
 
 .block {
     width: 290px;
     position: relative;
     text-align: center;
+    padding-top: 100px;
 }
 
 .block::before {
     display: block;
     content: '';
+    width: 90px;
     height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
     background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 20px;
 } 
 
 .time::before{
@@ -210,14 +210,13 @@ h3 {
 h6 {
     margin: 0 0 10px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 18px;
     letter-spacing: -0.025em;
 }
 
 p {
     margin: 0;
-    padding: 0 6px;
     font-family: 'Roboto Slab', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -231,7 +230,7 @@ p {
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 86px 0 50px;
+    padding: 100px 0 50px;
 }
 
 .send-info {
@@ -242,20 +241,14 @@ p {
 } 
 
 .contact {
-    margin: 0 0 8px;
+    margin: 0 0 12px;
     text-transform: uppercase;
     color: white;
 }
 
 .sub-title {
-    margin: 0 0 74px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
+    margin: 0 0 76px;
     color: #777777;
-    letter-spacing: 0.015em;
 }
 
 input {
@@ -267,10 +260,7 @@ input:last-child {
 }
 
 .holder {
-    display: flex;
-    justify-content: space-between;
     width: 456px;
-    text-transform: uppercase;
 }
 
 .confir, textarea {
@@ -300,7 +290,6 @@ textarea {
     box-sizing: border-box;
     resize: none;
     letter-spacing: -0.025em;
-    text-transform: uppercase;
 }
 
 .button {
