@@ -122,12 +122,13 @@ h2::before {
     align-content: space-between;
     flex-wrap: wrap;
     padding: 0 10px;
-    /* margin-bottom: -10px; */
+    min-height: 340px;
+    padding-bottom: 90px;
 }
 
 
 .block {
-    margin-bottom: 94px;
+    min-height: 76px;
     width: 380px;
     padding: 0 0 0 80px;
     position: relative;
@@ -185,7 +186,6 @@ p  {
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
-    padding-right: 10px;
 }
 
 
