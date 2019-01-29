@@ -2,8 +2,13 @@
 
 {
     .conteiner {
-        width: 660px;
+        max-width: 660px;
+        width: 100%;
         margin: 0 auto;
+    }
+
+    .slide {
+        min-height: 700px;
     }
     
     .navigation {
@@ -19,21 +24,60 @@
         margin: 0;
     }
 
+    .navigation {
+        margin-bottom: 120px;
+    }
+
+    h1 {
+        font-size: 52px;
+        margin-bottom: 20px;
+    }
+
+    .sub-title {
+        break-after: none;
+        font-size: 26px;
+        letter-spacing: -0.025em;
+        margin-bottom: 32px;
+    }
+
+    button {
+        padding: 12px 26px;
+        font-size: 14px;
+    }
+
+    h2 {
+        letter-spacing: -0.02em;
+        margin-bottom: 20px;
+    }
+
     .partner {
         flex-wrap: wrap;
-        width: 490px;
+        max-width: 480px;
+        min-height: 500px;
+        justify-content: space-between;
+        align-content: space-between;
+        margin-bottom: 38px;
     }
 
     .cart {
-        padding-bottom: 50px;
+        max-width: 220px;
+        padding: 0;
     }
 
+    .two {
+        order: 3;
+    }
+
+    .three {
+        order: 2;
+    }
 }
 
 @media (min-width:940px) 
 {
     .conteiner {
-        width: 940px;
+        min-width: 940px;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -68,6 +112,7 @@
     }
 
     .partner {
+        min-height: 300px;
         flex-wrap: nowrap;
         margin-bottom: 36px;
     }
@@ -75,21 +120,11 @@
 
     .cart {
         max-width: 250px;
+        max-height: 250px;
         margin: 0 10px;
         padding: 0;
     }
 
 }
-    .two {
-        order: 2;
-    }
 
-    .three {
-        order: 3;
-    }
 
-    .see  {
-        padding: 10px 28px;
-        letter-spacing: 0.025em;
-    }
-}
