@@ -81,18 +81,18 @@ body {
 }
 
 .conteiner {
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
     margin: 0 auto;
-
 }
 
-.slide {
+header {
     min-height: 560px;
     background-image: url(../img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0 0 66px;
+    margin: 0 auto;
 }
 
 .navigation {
@@ -103,7 +103,6 @@ body {
     background-position:center;    
     flex-wrap: wrap-reverse; 
     justify-content: center;
-    margin-bottom: 8px;
 }
 
 .logo {
@@ -119,11 +118,12 @@ body {
     font-weight: 600;
 }
   
-.nav-item li{
+.log, .sing {
     padding: 8px;
     display: flex;
     justify-content: center;
     width: 100px;
+    background: transparent;
 }
 
 a {
@@ -131,7 +131,8 @@ a {
     text-decoration: none;
 } 
 
-li:hover {
+.log:hover,
+.sing:hover {
     content: "";
     border: 2px solid #fff;
     padding: 6px;
@@ -180,30 +181,78 @@ button {
 }
 
 h2 {
-    margin-bottom: 22px;
+    margin-bottom: 4px;
     text-align: center;
     font-size: 22px;
     letter-spacing: -0.01em;
-    padding: 0 8px;
-    margin: 6px;
-
+    padding: 44px 10px 10px;
 }
 
 .partner {
+    margin: 0 auto;
     display: flex;
-    align-content: space-between;
-    margin-bottom: 10px;
+    align-content: center;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .cart {
     width: 220px;
-    min-height: 220px;
+    min-height: 210px;
     text-align: center;
-    padding-bottom: 18px;
+    margin-bottom: 20px;
 }
+
+.block{
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.block::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transform: translate(-110%, -10px);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    right: 0;
+    bottom: 0;
+}
+
+.block_tv::after {
+    background-image: url(../img/tv.png);
+}
+
+.block_him::after {
+    background-image: url(../img/him.png);
+}
+
+.block_cup::after {
+    background-image: url(../img/cup.png);
+}
+
+.block_air::after {
+    background-image: url(../img/air.png);
+}
+
+
+.four {
+    order: 4;
+}
+
+
+.two {
+    order: 2;
+}
+
+.three {
+    order: 3;
+}
+
 
 .block {
     margin-bottom: 4px;
@@ -227,13 +276,13 @@ h2 {
 .see {
     display: block;
     justify-content: center;
-    padding: 10px 30px;
+    padding: 10px 74px;
     background: none;
     color: #ff4e50;
     border: 2px solid #ff4e50;
 }
 
-.button {
+.but_see {
     padding: 0 0 70px;
 }
 
@@ -253,8 +302,4 @@ h2 {
 
 .three {
     order: 3;
-}
-
-.see  {
-    padding: 10px 74px;
 }
