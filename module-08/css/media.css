@@ -113,15 +113,14 @@
     }
 
     .partner {
+        justify-content: center;
         min-height: 250px;
         flex-wrap: nowrap;
         margin-bottom: 30px;
     }
 
-    
-
     .cart {
-        max-width: 250px;
+        min-width: 220px;
         max-height: 250px;
         padding: 0;
     }
