@@ -2,84 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/media.css">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Homework-09</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
 </head>
 
 <body>
     <header class="container-fluid">
-        <div class="flex-row justify-content-center">
-            <div class="navigation">
-                <div class="logo">URLAUBSGLÜCK</div>
-                <nav>
-                    <div class="nav-item">
-                        <button class="log">Log In</button>
-                        <button class="sing">Sign up</button>
-                    </div>
-                </nav>
-            </div>
+        <div class="slider row justify-content-center">
+            <nav>
+                <div class="log">
+                    <button type="login">Log in</button>
+                    <button type="sing">Sign up</button>
+                </div>
+                <a href="#" class="logo">urlaubsglück</a>
+            </nav>
+            <h1 class="title col-sm-12 col-md-8 col-lg-6">Share your holiday dreams</h1>
+            <h4 class="sub-title col-sm-12">And find the perfect partner to fullfill it</h4>
+            <button class="find ">Find your holiday partner</button>
         </div>
-        <h1 class="title col-sm-12 col-md-8 col-lg-12">Share your <br> holiday dreams</h1>
-        <h3 class="sub-title col-sm-12"> And find the perfect partner to fullfill it</h3>
-
-        <button class="find"><span>Find your holiday partner</span></button>
-
     </header>
-    <h2>Meet a partner for your best holiday</h2>
 
-    <section class="partner flex-row justify-content-center">
-            <div class="cart one col-9 col-sm-4 col-md-6 col-lg-5">
-                <div class="block block_tv">
-                    <img src="./img/png-01.png" alt="Bradley">
-                </div>
-                <p class="name">Bradley Hunter</p>
-                <p class="ineteres">Based in Chicago.
-                    I love playing tennis and loud music.</p>
-            </div>
+    <section class="partner container">
 
-            <div class="cart two col-9 col-sm-4 col-md-6 col-lg-5 order-md-2">
-                <div class="block block_him">
-                    <img src="./img/png-03.png" alt="Lucas">
+        <h2 class="title-partner">Meet a partner for your best holiday</h2>
+
+        <div class="partner-list row justify-content-between">
+            <div class="cart  col-sm-12 col-md-4 col-lg-3">
+                <div class="partner-photo one">
+                    <img src="./img/png-01.png" alt="Bradley Hunter" />
                 </div>
-                <p class="name">Lucas Marsha</p>
-                <p class="ineteres">I get my inspiration from nature and
-                    objects around me. I have a passion to colours,
-                    typography and skateboards.
+                <h5 class="name">Bradley Hunter</h5>
+                <p class="interes">
+                    Based in Chicago. I love playing tennis and loud music.
                 </p>
             </div>
 
-            <div class="cart three col-9 col-sm-4 col-md-6 col-lg-5">
-                <div class="block block_cup">
-                    <img src="./img/png-02.png" alt="Heather">
+            <div class="cart  col-sm-12 col-md-4 col-lg-3 order-md-2">
+                <div class="partner-photo two">
+                    <img src="./img/png-03.png" alt="1" />
                 </div>
-                <p class="name ">Heather Walker</p>
-                <p class="ineteres">I'm a happy person that loves cats
-                    and climbing on mountains. </p>
+                <h5 class="name">Lucas Marsha</h5>
+                <p class="interes">
+                    I get my inspiration from nature and objects around me. I have a
+                    passion to colours, typography and skateboards.
+                </p>
             </div>
 
-
-
-            <div class="cart four col-9 col-sm-4 col-md-6 col-lg-5 order-md-3">
-                <div class="block block_air">
-                    <img src="./img/png-04.png" alt="Bradley">
+            <div class="cart  col-sm-12 col-md-4 col-lg-3">
+                <div class="partner-photo three">
+                    <img src="./img/png-02.png" alt="1" />
                 </div>
-                <p class="name">Bradley Hunter</p>
-                <p class="ineteres">Based in Chicago.
-                    I love playing tennis and loud music.</p>
+                <h5 class="name">Heather Walker</h5>
+                <p class="interes">
+                    I'm a happy person that loves cats and climbing on mountains.
+                </p>
+            </div>
+
+            <div class="cart  col-sm-12 col-md-4 col-lg-3 order-md-3">
+                <div class="partner-photo four">
+                    <img src="./img/png-04.png" alt="1" />
+                </div>
+                <h5 class="name">Bradley Hunter</h5>
+                <p class="interes">
+                    Based in Chicago. I love playing tennis and loud music.
+                </p>
             </div>
         </div>
-    </section>
-    <div class="but_see">
-        <button class="see">See other partners</button>
-    </div>
 
+        <button class="see">See other partners</button>
+
+    </section>
 </body>
 
 </html>

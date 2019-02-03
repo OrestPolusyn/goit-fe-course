@@ -1,134 +1,72 @@
-@media (min-width:768px) 
-
-{
-    .conteiner {
-        max-width: 660px;
-    }
-
+@media (min-width: 768px) {
     header {
-        min-height: 700px;
+      padding-bottom: 234px;
     }
     
-    .navigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 40px 0 20px;
-        color: #fff;
-        background-position:center;    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      align-items: center;
+      padding: 18px 50px 110px;
+      width: 670px;
+      margin: 0 auto 26px;
+      box-sizing: border-box;
+    }
+    
+    .log,
+    .logo {
+      margin: 0;
     }
 
-    .nav-item {
-        margin: 0;
-    }
-
-    .navigation {
-        margin-bottom: 120px;
-    }
-
-    h1 {
-        font-size: 52px;
-        margin-bottom: 20px;
+    .title {
+      font-size: 52px;
+      width: 520px;
+      margin-bottom: 24px;
     }
 
     .sub-title {
-        break-after: none;
-        font-size: 26px;
-        letter-spacing: -0.025em;
-        margin-bottom: 32px;
+      font-size: 24px;
+      width: 404px;
+      margin-bottom: 32px;
     }
 
-    button {
-        padding: 12px 26px;
-        font-size: 14px;
+    .find {
+      width: 226px;
     }
 
-    h2 {
-        letter-spacing: -0.02em;
-        margin-bottom: 20px;
-        padding-top: 50px;
-
+    .title-partner {
+      width: 100%;
+      margin-bottom: 30px;
     }
 
-    .partner {
-        flex-wrap: wrap;
-        max-width: 480px;
-        min-height: 500px;
-        justify-content: space-between;
-        align-content: space-between;
-        margin-bottom: 38px;
+    .partner-list {
+      max-width: 492px;
+      margin: 0 auto 28px;
     }
 
     .cart {
-        max-width: 220px;
-        padding: 0;
+      margin-bottom: 56px;
+      max-width: 222px;
     }
 
     .see {
-        padding: 10px 30px;
+      width: 194px;
     }
-
-    .two {
-        order: 3;
+  }
+  
+  @media (min-width: 992px) {
+    
+    nav {
+      width: 940px;
+      margin: 0 auto;
+      padding: 18px 0 130px;
     }
-
-    .three {
-        order: 2;
+    
+    .partner-list {
+      max-width: 940px;
     }
-}
-
-@media (min-width:940px) 
-{
-    .conteiner {
-        /* min-width: 940px; */
-    }
-
-    header {
-        min-height: 700px;
-    }
-
-    .navigation {
-        margin-bottom: 120px;
-    }
-
-    h1 {
-        font-size: 52px;
-        margin-bottom: 22px;
-    }
-
-    .sub-title {
-        break-after: none;
-        font-size: 26px;
-        letter-spacing: -0.025em;
-        margin-bottom: 32px;
-    }
-
-    button {
-        padding: 12px 26px;
-        font-size: 14px;
-    }
-
-    h2 {
-        letter-spacing: -0.02em;
-        margin: 14px 0 32px;
-    }
-
-    .partner {
-        min-height: 250px;
-        flex-wrap: nowrap;
-        margin-bottom: 30px;
-    }
-
-    .block {
-        margin-bottom: 16px;
-    }
-
     .cart {
-        max-width: 250px;
-        max-height: 250px;
-        padding: 0;
+      margin: 0;
     }
-
-}
-
-
+  }
