@@ -5,10 +5,10 @@
         max-width: 660px;
     }
 
-    header {
-        min-height: 700px;
+    nav {
+        margin: 0;
     }
-    
+
     .navigation {
         display: flex;
         justify-content: space-between;
@@ -45,8 +45,7 @@
 
     h2 {
         letter-spacing: -0.02em;
-        margin-bottom: 20px;
-        padding-top: 50px;
+        padding: 50px 0 20px;
 
     }
 
@@ -84,7 +83,7 @@
     }
 
     header {
-        min-height: 700px;
+        /* min-height: 700px; */
     }
 
     .navigation {
@@ -110,7 +109,7 @@
 
     h2 {
         letter-spacing: -0.02em;
-        margin: 14px 0 32px;
+        /* margin: 14px 0 32px; */
     }
 
     .partner {
@@ -119,9 +118,7 @@
         margin-bottom: 30px;
     }
 
-    .block {
-        margin-bottom: 16px;
-    }
+    
 
     .cart {
         max-width: 250px;
