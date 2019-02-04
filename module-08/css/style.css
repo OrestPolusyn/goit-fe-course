@@ -145,6 +145,7 @@ a {
     border-radius: 30px;
 } 
 
+
 h1 {
     margin: 0 0 6px;
     display: flex;
@@ -155,7 +156,6 @@ h1 {
     text-align: center;
     font-size: 30px;
     letter-spacing: -0.03em;    
-
 }
 
 .sub-title {
@@ -186,12 +186,16 @@ button {
     font-weight: 700;
 }
 
+section {
+    padding-top: 64px;
+}
+
+
 h2 {
     text-align: center;
     font-size: 22px;
     letter-spacing: -0.01em;
-    padding: 64px 10px 14px;
-    margin: 0;
+    margin: 0 0 20px;
 }
 
 .partner {
@@ -211,7 +215,7 @@ h2 {
 
 .block{
     position: relative;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .block::after {
@@ -220,7 +224,7 @@ h2 {
     width: 40px;
     height: 40px;
     position: absolute;
-    transform: translate(-110%, -14px);
+    transform: translate(-120%, 0);
     background-repeat: no-repeat;
     background-position: center;
     border: 4px solid #fff;

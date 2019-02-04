@@ -45,14 +45,14 @@
 
     h2 {
         letter-spacing: -0.02em;
-        padding: 50px 0 20px;
+        /* padding: 50px 0 20px; */
 
     }
 
     .partner {
         flex-wrap: wrap;
-        max-width: 480px;
-        min-height: 500px;
+        /* max-width: 480px; */
+        /* min-height: 500px; */
         justify-content: space-between;
         align-content: space-between;
         margin-bottom: 38px;
